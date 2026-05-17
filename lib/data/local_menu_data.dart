@@ -49,6 +49,11 @@ class LocalMenuData {
           category: 'Bolos',
         ),
         MenuProductModel(
+          name: 'Bolo Especial',
+          imagePath: AppImages.bolos5,
+          category: 'Bolos',
+        ),
+        MenuProductModel(
           name: 'Doces',
           imagePath: AppImages.doce,
           category: 'Bolos',
@@ -80,6 +85,16 @@ class LocalMenuData {
           imagePath: AppImages.cafechoco,
           category: 'Cafeteria',
         ),
+        MenuProductModel(
+          name: 'Café com Beiju',
+          imagePath: AppImages.cafeBeiju,
+          category: 'Cafeteria',
+        ),
+        MenuProductModel(
+          name: 'Café com Pão de Queijo',
+          imagePath: AppImages.cafepaoqueijo,
+          category: 'Cafeteria',
+        ),
       ],
     ),
 
@@ -99,6 +114,16 @@ class LocalMenuData {
         MenuProductModel(
           name: 'Nossos Clientes',
           imagePath: AppImages.clientes,
+          category: 'Nossa Cafeteria',
+        ),
+        MenuProductModel(
+          name: 'Clientes Doce&Café',
+          imagePath: AppImages.clientes2,
+          category: 'Nossa Cafeteria',
+        ),
+        MenuProductModel(
+          name: 'Momentos Especiais',
+          imagePath: AppImages.clientes3,
           category: 'Nossa Cafeteria',
         ),
         MenuProductModel(
