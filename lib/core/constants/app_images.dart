@@ -1,5 +1,6 @@
 class AppImages {
   static const String logo = 'assets/images/logo/logo_doce_cafe.jpeg';
+  static const String logotipo = 'assets/images/logo/logotipo.png';
 
   static const String donos = 'assets/images/cliente/donos.jpeg';
   static const String clientes = 'assets/images/cliente/clientes.jpeg';

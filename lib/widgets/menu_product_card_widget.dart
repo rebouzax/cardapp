@@ -23,19 +23,23 @@ class MenuProductCardWidget extends StatelessWidget {
           ),
         ],
       ),
-      child: Column(
+      child: Row(
         children: [
           Expanded(
+            flex: 6,
             child: ClipRRect(
-              borderRadius: const BorderRadius.vertical(
-                top: Radius.circular(20),
+              borderRadius: const BorderRadius.horizontal(
+                left: Radius.circular(20),
               ),
               child: Image.asset(
                 product.imagePath,
+                height: double.infinity,
                 width: double.infinity,
                 fit: BoxFit.cover,
+                alignment: Alignment.center,
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
+                    height: double.infinity,
                     width: double.infinity,
                     color: AppColors.backgroundDark,
                     child: const Icon(
@@ -48,19 +52,23 @@ class MenuProductCardWidget extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-            child: Text(
-              product.name,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: const TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.w900,
-                color: AppColors.textDark,
-                height: 1.05,
+          Expanded(
+            flex: 5,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              child: Center(
+                child: Text(
+                  product.name,
+                  textAlign: TextAlign.center,
+                  maxLines: 4,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w900,
+                    color: AppColors.textDark,
+                    height: 1.05,
+                  ),
+                ),
               ),
             ),
           ),
